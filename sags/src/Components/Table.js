@@ -3,7 +3,7 @@ import DataTable from 'react-data-table-component';
 import columns from './Columns';
 import data from './MockData';
 import {checkbox} from"@mui/material"
-import {ArrowDownward} from '@mui/material/';
+import {ArrowDownward} from '@mui/icons-material';
 export const Table = () => {
     const sortIcon = <ArrowDownward />;
 const selectProps = { indeterminate: isIndeterminate => isIndeterminate };
