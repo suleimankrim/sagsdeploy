@@ -1,16 +1,22 @@
-import React from 'react'
-import DataTable from 'react-data-table-component';
-import columns from './Columns';
-import data from './MockData';
-import {checkbox} from"@mui/material"
-import {ArrowDownward} from '@mui/icons-material';
+import React from "react";
+import DataTable from "react-data-table-component";
+import columns from "./Columns";
+import data from "./MockData";
+import { Checkbox } from "@mui/material";
+import { ArrowDownward } from "@mui/icons-material";
+
 export const Table = () => {
-    const sortIcon = <ArrowDownward />;
-const selectProps = { indeterminate: isIndeterminate => isIndeterminate };
+  const sortIcon = <ArrowDownward />;
+  const selectProps = { indeterminate: (isIndeterminate) => isIndeterminate };
   return (
     <DataTable
-            columns={columns}
-            data={data}
-        />
-  )
-}
+      pagination
+      selectableRowsComponent={Checkbox}
+      selectableRowsComponentProps={selectProps}
+      sortIcon={sortIcon}
+      dense
+      columns={columns}
+      data={data}
+    />
+  );
+};

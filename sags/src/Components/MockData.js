@@ -5,9 +5,45 @@ const data = [
         year: '1988',
     },
     {
-        id: 2,
+
         title: 'Ghostbusters',
         year: '1984',
     },
+    {
+        title: '',
+        year: '',
+    },
+    {
+        title: '',
+        year: '',
+    },
+    {
+        title: '',
+        year: '',
+    },
+    {
+        title: '',
+        year: '',
+    },
+    {
+        title: '',
+        year: '',
+    },
+    {
+        title: '',
+        year: '',
+    },
+    {
+        title: '',
+        year: '',
+    },
+    {
+        title: '',
+        year: '',
+    },
+    {
+        title: '',
+        year: '',
+    },  
 ]
 export default data;

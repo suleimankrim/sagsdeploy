@@ -1,0 +1,15 @@
+.cell{
+    border: none;
+    z-index: 100;
+    
+}
+.cell:focus{
+    color: red;
+    outline: none;
+  }
+.otercell{
+    width: 100%;
+    height: 100%;
+    border-color:red ;
+    border-style: solid;
+}
