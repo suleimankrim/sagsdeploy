@@ -1,7 +1,7 @@
 import React from "react";
 import Style from "./Cell.module.css";
 import { useFormik } from "formik";
-import data from "./MockData";
+import data from "../../MockData";
 const filds = Object.keys(data[0]);
 export const CellForm = ({ row, index }) => {
     console.log(row[filds[index]])

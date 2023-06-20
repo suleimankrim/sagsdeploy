@@ -1,7 +1,7 @@
-import React from "react";
 import DataTable from "react-data-table-component";
-import columns from "./Columns";
-import data from "./MockData";
+import columns from "./columns/Columns";
+import data from "../MockData";
+import useScrollPosition from './scroller/Scroller';
 
 const customStyles = {
   rows: {
@@ -23,6 +23,11 @@ const customStyles = {
     }};
     
 export const Table = () => {
+
+console.log("sssssssssssssssssssss")
+const scrollPosition = useScrollPosition();
+
+console.log(scrollPosition); 
   return (
     <DataTable
       columns={columns}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Table } from './Components/Table';
+import { Table } from './Components/Table/Table';
 import { Header } from './Components/header/Header';
  const App = () => {
   return (

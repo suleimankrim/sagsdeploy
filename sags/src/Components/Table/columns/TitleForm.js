@@ -1,8 +1,7 @@
 import React from "react";
-import Style from "./Cell.module.css";
+import Style from "../cell/Cell.module.css";
 import { useFormik } from "formik";
-import data from "./MockData";
-export const HeadForm = ({ name, index }) => {
+export const TitleForm = ({ name }) => {
   const formik = useFormik({
     initialValues: {
         cellValue :name,
@@ -17,3 +16,4 @@ export const HeadForm = ({ name, index }) => {
      </div>
   );
 };
+export default TitleForm;
