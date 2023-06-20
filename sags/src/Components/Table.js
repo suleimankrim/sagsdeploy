@@ -4,6 +4,7 @@ import columns from "./Columns";
 import data from "./MockData";
 import { Checkbox } from "@mui/material";
 import { ArrowDownward } from "@mui/icons-material";
+
 export const Table = () => {
   const sortIcon = <ArrowDownward />;
   const selectProps = { indeterminate: (isIndeterminate) => isIndeterminate };
