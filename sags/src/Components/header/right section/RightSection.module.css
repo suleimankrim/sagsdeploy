@@ -1,0 +1,25 @@
+.Container{
+display: flex;
+
+flex-direction: row;
+justify-content:center ;
+align-items: center;
+margin-right:30px ;
+}
+.Userphotocontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+height: 100%;
+/* background-color: black;  */
+margin-right:10px;
+}
+.Username{
+    height: 100%;
+    z-index: 100;
+    font-size: 25px;
+    box-shadow: 20px 5xp 2xp rgba(0, 0, 0, 0);
+    text-shadow: 20px 5xp 2xp rgba(0, 0, 0, 0.25);
+    /* background-color: blue; */
+    
+    }
