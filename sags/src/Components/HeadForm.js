@@ -2,12 +2,10 @@ import React from "react";
 import Style from "./Cell.module.css";
 import { useFormik } from "formik";
 import data from "./MockData";
-const filds = Object.keys(data[0]);
-export const CellForm = ({ row, index }) => {
-    console.log(row[filds[index]])
+export const HeadForm = ({ name, index }) => {
   const formik = useFormik({
     initialValues: {
-        cellValue :row[filds[index]],
+        cellValue :name,
     },
   });
   return (<div className={Style.outer}>
