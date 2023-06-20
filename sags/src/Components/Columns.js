@@ -1,60 +1,16 @@
 import Style from "./Cell.module.css";
-const columns = [
-    {
-        name: 'Title',
-        selector: row => row.title,
-        sortable: true,
-        cell : (row,index,column) =>(<>
-      <div className={Style.otercell}>
-        {index}
-        </div>
-        </>)
-    },
-    {
-        name: 'Year',
-        selector: row => row.year,
-        omit: false,
-        reorder: true,
-        style:{
-            backgroundColor:'red'
-        }
-    },
-        {
-            name:' '
-        },
-        {
-            name:' '
-        },
-        {
-            name:' '
-        },
-        {
-            name:' '
-        },
-        {
-            name:' '
-        },
-        {
-            name:' '
-        }
-        ,
-        {
-            name:' '
-        },
-        {
-            name:' '
-        },
-        {
-            name:' '
-        },
-        {
-            name:' '
-        },
-        {
-            name:' '
-        },
-        {
-            name:' '
-        }
-]
+import { CellForm } from "./CellForm";
+import data from "./MockData";
+import { useFormik } from 'formik';
+const title = ["Id","Name", "Years"];
+const columns = title.map((title,index) => {
+  return {
+    name: title,
+    cell: (row) =>(<>
+    {console.log(row)}
+     < CellForm row = {row} index = {index} key={row.id}/>
+     </>),
+  };
+});
+
 export default columns;

@@ -1,15 +1,12 @@
 .cell{
-    border: none;
     z-index: 100;
+    width: 100%;
+    height: 100%;
+    border-color: rgb(224, 222, 222);  
+    border-style: solid;
     
 }
 .cell:focus{
-    color: red;
+    color:  rgb(224, 222, 222);  
     outline: none;
   }
-.otercell{
-    width: 100%;
-    height: 100%;
-    border-color:red ;
-    border-style: solid;
-}
