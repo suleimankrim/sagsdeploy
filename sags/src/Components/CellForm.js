@@ -10,8 +10,6 @@ export const CellForm = ({ row, index }) => {
         cellValue :row[filds[index]],
     },
   });
-  console.log(formik.values.cellValue)
-  console.log ("kkkkkkkkkkkkkkk");
   return (
     <input type="text" name="cellValue" id ="cellValue"
     value={formik.values.cellValue}
