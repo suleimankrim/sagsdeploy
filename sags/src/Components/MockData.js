@@ -8,17 +8,17 @@ const data = [
     id: 2,
     title: "Ghostbusters",
     year: "1984",
-  },
-  {
-    id: 3,
-    title: "",
-    year: "",
-  },
-  {
-    id :4,
-    title: "",
-    year: "",
-  },
+  }
  
 ];
+if(data.length<20 || Object.keys(data).length<8){
+for(var i=0; i<20 ; i++){
+    if(!data[i]){
+        data[i] ={
+            id : i,
+          
+        };
+    }
+}    
+}
 export default data;
