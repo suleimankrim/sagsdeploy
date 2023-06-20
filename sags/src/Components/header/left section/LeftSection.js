@@ -6,6 +6,8 @@ import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Style from "./LeftSection.module.css";
+import  {Menu as Menueicon}   from "@mui/icons-material"; 
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
 // export const LeftSection = () => {
 //   return (
@@ -25,6 +27,7 @@ export const LeftSection = () => {
 
   return (
     <div className={Style.ButtonContainer}>
+        
       <Button
         id="basic-button"
         aria-controls={open ? "basic-menu" : undefined}
@@ -33,8 +36,12 @@ export const LeftSection = () => {
         onClick={handleClick}
         className={Style.Button}
       >
-        <MenuBookSharp sx={{fontSize:20}}/>
+         {/* <Menueicon sx={{color:"black",fontSize:30,fontWeight:100}} ></Menueicon> */}
+         <MenuRoundedIcon sx={{color:"black",fontSize:30}}></MenuRoundedIcon>
+
+        
       </Button>
+     
       <Menu
         id="basic-menu"
         anchorEl={anchorEl}
