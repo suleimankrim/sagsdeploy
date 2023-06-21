@@ -3,6 +3,7 @@ import { Table } from './Components/Table/Table';
 import { Header } from './Components/header/Header';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom"; 
+import { SearchBoxContainer } from './Components/SearchBoxContainer/SearchBoxContainer';
  const App = () => {
   return (
     <>
@@ -10,7 +11,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
     <BrowserRouter>
       <Routes>
      
-        <Route path="/" element={<Table/>}/>
+        <Route path="/" element={<><SearchBoxContainer/><Table/></>}/>
           {/* <Route index element={<Home />} /> */}
     
           

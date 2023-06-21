@@ -12,6 +12,7 @@ import MenuItemContainer from "./MenuItemContainer";
 import UploadFileOutlinedIcon from '@mui/icons-material/UploadFileOutlined';
 import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
 import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
+import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 // export const LeftSection = () => {
 //   return (
 // <div><Menu fontSize='20' /></div>
@@ -58,6 +59,7 @@ export const LeftSection = () => {
         <MenuItem onClick={handleClose}><MenuItemContainer text={"Upload file"} Icon={<UploadFileOutlinedIcon sx={{fontSize:20}}></UploadFileOutlinedIcon>} /> </MenuItem>
         <MenuItem onClick={handleClose}><MenuItemContainer text={"Save file"} Icon={<SaveOutlinedIcon sx={{fontSize:20}}></SaveOutlinedIcon>} /> </MenuItem>
         <MenuItem onClick={handleClose}><MenuItemContainer text={"Settings"} Icon={<SettingsRoundedIcon sx={{fontSize:20}} ></SettingsRoundedIcon>} /> </MenuItem>
+        <MenuItem onClick={handleClose}><MenuItemContainer text={"Logout"} Icon={<LogoutRoundedIcon sx={{fontSize:20}} ></LogoutRoundedIcon>} /> </MenuItem>
       </Menu>
     </div>
   );
