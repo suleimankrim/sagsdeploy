@@ -1,7 +1,7 @@
 import DataTable from "react-data-table-component";
 import columns from "./columns/Columns";
 import data from "../MockData";
-
+import TableFooter from "./TableFooter/TableFooter";
 const customStyles = {
   rows: {
       style: {
@@ -22,12 +22,15 @@ const customStyles = {
     }};
     
 export const Table = () => {
-  return (
+  return (<>
+      <TableFooter/>
     <DataTable
       columns={columns}
       dense
       data={data}
       customStyles={customStyles}
     />
+
+    </>
   );
 };
