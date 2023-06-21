@@ -1,26 +1,32 @@
-import React from 'react'
-import { Table } from './Components/Table/Table';
-import { Header } from './Components/header/Header';
+import { Table } from "./Components/Table/Table";
+import { Header } from "./Components/header/Header";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom"; 
-import { SearchBoxContainer } from './Components/SearchBoxContainer/SearchBoxContainer';
-import { SwitchContainer } from './Components/SearchBoxContainer/SwitchContainer/SwitchContainer';
- const App = () => {
-   return (
-   
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { SearchBoxContainer } from "./Components/SearchBoxContainer/SearchBoxContainer";
+import TableFooter from "./Components/Table/TableFooter/TableFooter";
+import CustomScroll from 'react-custom-scroll';
+const App = () => {
+  return (
     <>
-    <Header/>
-      <SwitchContainer />
-     <BrowserRouter>
-       <Routes>
-     
-         <Route path="/" element={<><SearchBoxContainer/><Table/></>}/>
-           {/* <Route index element={<Home />} /> */}
-    
-          
-       </Routes>
-       </BrowserRouter>
-     </>
-  )
-}
+      <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+              <CustomScroll>
+                <SearchBoxContainer />
+                </CustomScroll>
+                <Table />
+              </>
+            }
+          />
+          {/* <Route index element={<Home />} /> */}
+        </Routes>
+      </BrowserRouter>
+      <TableFooter />
+    </>
+  );
+};
 export default App;
