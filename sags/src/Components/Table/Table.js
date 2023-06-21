@@ -23,7 +23,6 @@ const customStyles = {
     
 export const Table = () => {
   return (<>
-      <TableFooter/>
     <DataTable
       columns={columns}
       dense
