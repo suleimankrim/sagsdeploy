@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "../cell/Cell.module.css";
+import Style from "../body-cell/Cell.module.css";
 import { useFormik } from "formik";
 export const TitleForm = ({ name }) => {
   const formik = useFormik({

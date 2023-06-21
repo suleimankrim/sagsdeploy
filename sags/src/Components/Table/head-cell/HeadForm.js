@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "../cell/Cell.module.css";
+import Style from "./head-cell.module.css";
 import { useFormik } from "formik";
 export const HeadForm = ({ name }) => {
   const formik = useFormik({
