@@ -6,7 +6,7 @@ export const SearchBoxContainer = () => {
     <div className={Style.SearchBoxContainer}>
       <div className={Style.SearchBox}>
         <SearchRoundedIcon></SearchRoundedIcon>
-        <input type="text" className={}></input>
+        <input type="text" className={Style.input}></input>
       </div>
     </div>
   );
