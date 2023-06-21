@@ -8,13 +8,17 @@ import MenuItem from "@mui/material/MenuItem";
 import Style from "./LeftSection.module.css";
 import  {Menu as Menueicon}   from "@mui/icons-material"; 
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
-
+import MenuItemContainer from "./MenuItemContainer";
+import UploadFileOutlinedIcon from '@mui/icons-material/UploadFileOutlined';
+import SaveOutlinedIcon from '@mui/icons-material/SaveOutlined';
+import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
 // export const LeftSection = () => {
 //   return (
 // <div><Menu fontSize='20' /></div>
 
 //   )
 // }
+// 1945
 export const LeftSection = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -51,9 +55,9 @@ export const LeftSection = () => {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        <MenuItem onClick={handleClose}><MenuItemContainer text={"Upload file"} Icon={<UploadFileOutlinedIcon sx={{fontSize:20}}></UploadFileOutlinedIcon>} /> </MenuItem>
+        <MenuItem onClick={handleClose}><MenuItemContainer text={"Save file"} Icon={<SaveOutlinedIcon sx={{fontSize:20}}></SaveOutlinedIcon>} /> </MenuItem>
+        <MenuItem onClick={handleClose}><MenuItemContainer text={"Settings"} Icon={<SettingsRoundedIcon sx={{fontSize:20}} ></SettingsRoundedIcon>} /> </MenuItem>
       </Menu>
     </div>
   );
