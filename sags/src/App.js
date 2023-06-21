@@ -4,20 +4,23 @@ import { Header } from './Components/header/Header';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom"; 
 import { SearchBoxContainer } from './Components/SearchBoxContainer/SearchBoxContainer';
+import { SwitchContainer } from './Components/SearchBoxContainer/SwitchContainer/SwitchContainer';
  const App = () => {
-  return (
+   return (
+   
     <>
-     <Header/>
-    <BrowserRouter>
-      <Routes>
+    <Header/>
+      <SwitchContainer />
+     <BrowserRouter>
+       <Routes>
      
-        <Route path="/" element={<><SearchBoxContainer/><Table/></>}/>
-          {/* <Route index element={<Home />} /> */}
+         <Route path="/" element={<><SearchBoxContainer/><Table/></>}/>
+           {/* <Route index element={<Home />} /> */}
     
           
-      </Routes>
-      </BrowserRouter>
-    </>
+       </Routes>
+       </BrowserRouter>
+     </>
   )
 }
 export default App;

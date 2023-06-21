@@ -5,8 +5,8 @@ export const SearchBoxContainer = () => {
   return (
     <div className={Style.SearchBoxContainer}>
       <div className={Style.SearchBox}>
-        <SearchRoundedIcon></SearchRoundedIcon>
-        <input type="text" className={Style.input}></input>
+        <SearchRoundedIcon sx={{color:"gray"}}></SearchRoundedIcon>
+        <input type="text" className={Style.Input}></input>
       </div>
     </div>
   );
