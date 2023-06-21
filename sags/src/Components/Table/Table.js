@@ -1,7 +1,6 @@
 import DataTable from "react-data-table-component";
 import columns from "./columns/Columns";
 import data from "../MockData";
-import TableFooter from "./TableFooter/TableFooter";
 const customStyles = {
   rows: {
       style: {

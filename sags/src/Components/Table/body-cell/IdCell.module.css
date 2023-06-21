@@ -7,9 +7,7 @@
     text-align: center;
 }
 .IdCell:focus{
-    /* outline: none; */
-    border-color: green;
-    outline: 1px dotted #000
+    outline: none;
   }
 .outer{
     border-style: solid;
