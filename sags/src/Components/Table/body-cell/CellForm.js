@@ -11,12 +11,12 @@ export const CellForm = ({ row, index }) => {
         cellValue :row[filds[index]],
     },
   });
-  return (<div className={index===0?secondStyle.outer :Style.outer}>
+  return (//<div className={index===0?secondStyle.outer :Style.outer}>
     <input type="text" name="cellValue" id ="cellValue"
     value={formik.values.cellValue}
      onChange={formik.handleChange} className={index===0?secondStyle.IdCell :Style.cell}
      
      ></input>
-     </div>
+     //</div>
   );
 };

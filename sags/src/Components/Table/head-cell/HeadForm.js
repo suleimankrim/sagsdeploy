@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "./head-cell.module.css";
+import Style from "../body-cell/IdCell.module.css";
 import { useFormik } from "formik";
 export const HeadForm = ({ name }) => {
   const formik = useFormik({
@@ -7,13 +7,13 @@ export const HeadForm = ({ name }) => {
         cellValue :name,
     },
   });
-  return (<div className={Style.outer}>
+  return (//<div className={Style.outer}>
     <input type="text" name="cellValue" id ="cellValue"
     value={formik.values.cellValue}
-     onChange={formik.handleChange} className={Style.cell}
+     onChange={formik.handleChange} className={Style.IdCell}
      
      ></input>
-     </div>
+   //  </div>
   );
 };
 export default HeadForm;
