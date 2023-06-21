@@ -1,6 +1,7 @@
 import React from "react";
 import Style from "./Cell.module.css";
 import { useFormik } from "formik";
+import secondStyle from './IdCell.module.css';
 import data from "../../MockData";
 const filds = Object.keys(data[0]);
 export const CellForm = ({ row, index }) => {
@@ -10,10 +11,10 @@ export const CellForm = ({ row, index }) => {
         cellValue :row[filds[index]],
     },
   });
-  return (<div className={Style.outer}>
+  return (<div className={index===0?secondStyle.outer :Style.outer}>
     <input type="text" name="cellValue" id ="cellValue"
     value={formik.values.cellValue}
-     onChange={formik.handleChange} className={Style.cell}
+     onChange={formik.handleChange} className={index===0?secondStyle.IdCell :Style.cell}
      
      ></input>
      </div>

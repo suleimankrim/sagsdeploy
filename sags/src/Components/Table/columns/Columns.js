@@ -20,8 +20,11 @@ const columns = alphabet.map((al, index) => {
             <CellForm row={row} index={index} key={row.id} />
           )}
         </>
-      )
+      ),
+      width: index===0? "40px":{},  
+      
     };
+    
 });
 
 export default columns;
