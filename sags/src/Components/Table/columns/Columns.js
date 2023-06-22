@@ -1,5 +1,5 @@
 import alphabet from "../../Assets/Alphabet";
-import data from "../../MockData";
+import data from "../MockData";
 import { CellForm } from "../body-cell/CellForm";
 import { HeadForm } from "../head-cell/HeadForm";
 import { TitleForm } from "../title-cell/TitleForm";

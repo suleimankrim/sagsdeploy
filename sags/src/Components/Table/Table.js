@@ -1,6 +1,6 @@
 import DataTable from "react-data-table-component";
 import columns from "./columns/Columns";
-import data from "../MockData";
+import data from "./MockData";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 import TableFooter from "../Table/TableFooter/TableFooter";
