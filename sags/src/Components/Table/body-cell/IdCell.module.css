@@ -1,4 +1,5 @@
 .IdCell{
+    z-index: 1000;
     width: 100%;
     height: 100%;
     border-color: rgb(93, 92, 92);

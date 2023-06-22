@@ -9,7 +9,6 @@ export const TitleForm = ({ name, index }) => {
     },
   });
   return (
-   // <div className={index === 0 ? secondStyle.outer : Style.outer}>
       <input
         type="text"
         name="cellValue"
@@ -18,7 +17,6 @@ export const TitleForm = ({ name, index }) => {
         onChange={formik.handleChange}
         className={index===0?secondStyle.IdCell :Style.cell}
       ></input>
-   // </div>
   );
 };
 export default TitleForm;
