@@ -1,0 +1,15 @@
+.TopCircle{
+position: absolute;
+top: 0;
+left: 0;
+aspect-ratio: 1;
+height: 30vh;
+}
+.BottomCircle{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+    aspect-ratio: 1;
+    height: 30vh;
+}
