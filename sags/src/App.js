@@ -3,7 +3,8 @@ import { Header } from "./Components/header/Header";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { SearchBoxContainer } from "./Components/SearchBoxContainer/SearchBoxContainer";
-import { SheetPage } from "./Components/SheetPage/SheetPage";
+import { SheetPage } from "./Components/SheetPage";
+import LoginPage from "./LoginPage/LoginPage";
 const App = () => {
   return (
     <>
@@ -12,7 +13,7 @@ const App = () => {
           <Route
             path="/"
             element={
-              <SheetPage/>
+              <LoginPage></LoginPage>
             }
           />
           {/* <Route index element={<Home />} /> */}

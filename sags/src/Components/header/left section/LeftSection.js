@@ -3,6 +3,7 @@ import { MenuBookSharp } from "@mui/icons-material";
 import { blue } from "@mui/material/colors";
 import { colors } from "@mui/material";
 import Button from "@mui/material/Button";
+import IconButton from "@mui/material";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Style from "./LeftSection.module.css";
@@ -33,7 +34,7 @@ export const LeftSection = () => {
   return (
     <div className={Style.ButtonContainer}>
         
-      <Button
+      <IconButton
         id="basic-button"
         aria-controls={open ? "basic-menu" : undefined}
         aria-haspopup="true"
@@ -45,7 +46,7 @@ export const LeftSection = () => {
          <MenuRoundedIcon sx={{color:"black",fontSize:30}}></MenuRoundedIcon>
 
         
-      </Button>
+      </IconButton>
      
       <Menu
         id="basic-menu"
