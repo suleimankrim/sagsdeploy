@@ -8,7 +8,7 @@ const columns = alphabet.map((al, index) => {
     return {
       name: <HeadForm name={al} key={index} />,
 
-      cell: (row, idx) => (
+      cell: (row, idx, c) => (
         <>
           {idx === 0 ? (
             <TitleForm
@@ -18,7 +18,11 @@ const columns = alphabet.map((al, index) => {
             />
           ) : (
             <CellForm row={row} index={index} key={row.id} />
+           
           )}
+           {console.log(row)}
+           {console.log(c.name.style)}
+
         </>
       ),
       width: index===0? "40px":{},  

@@ -17,6 +17,7 @@ export const TitleForm = ({ name, index }) => {
         onChange={formik.handleChange}
         className={index===0?secondStyle.IdCell :Style.cell}
       ></input>
+
   );
 };
 export default TitleForm;
