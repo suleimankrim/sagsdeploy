@@ -11,10 +11,23 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route
-            path="/"
+            exact path="/"
             element={
               <LoginPage></LoginPage>
+              
             }
+            
+          />
+           <Route
+            exact path="/table"
+            element={
+              <>
+              <Header></Header>
+              <SearchBoxContainer></SearchBoxContainer>
+              <Table></Table>
+              </>
+            }
+            
           />
           {/* <Route index element={<Home />} /> */}
         </Routes>
