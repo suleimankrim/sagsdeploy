@@ -10,7 +10,7 @@ import  { switchClasses } from '@mui/joy/Switch';
 import Style from './SwitchContainer.module.css'
 export const SwitchContainer = () => {
     const [dark, setDark] = React.useState(false);
-    const [icon, setIcon] = React.useState(<LockOutlined sx={{color:'white' ,fontSize:'20px'}}></LockOutlined>);
+    const [icon, setIcon] = React.useState(<LockOpenOutlinedIcon sx={{color:'white' ,fontSize:'20px'}}></LockOpenOutlinedIcon>);
    const ChangeIcon=function () {
     if (dark ===true) {
         setIcon(<LockOpenOutlinedIcon sx={{color:'white' ,fontSize:'20px'}}></LockOpenOutlinedIcon>);
