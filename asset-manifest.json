@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sagsdeploy/static/css/main.15d77bd7.css",
-    "main.js": "/sagsdeploy/static/js/main.1c8123c9.js",
+    "main.js": "/sagsdeploy/static/js/main.82b6d1e6.js",
     "static/media/Store and Analyze Grades System.svg": "/sagsdeploy/static/media/Store and Analyze Grades System.55b6940b89968c90c9b2ce5de79575d4.svg",
     "static/media/Store and Analyze Grades.svg": "/sagsdeploy/static/media/Store and Analyze Grades.8305a9e4ee8386d5f5ea8a76fa635794.svg",
     "static/media/facebook-svgrepo-com.svg": "/sagsdeploy/static/media/facebook-svgrepo-com.3f4803d12fb1039c9547fc5fb7257123.svg",
@@ -9,10 +9,10 @@
     "static/media/1-PhotoRoom.png-PhotoRoom.svg": "/sagsdeploy/static/media/1-PhotoRoom.png-PhotoRoom.f80854ec7aabc096248f3d1283ae8040.svg",
     "index.html": "/sagsdeploy/index.html",
     "main.15d77bd7.css.map": "/sagsdeploy/static/css/main.15d77bd7.css.map",
-    "main.1c8123c9.js.map": "/sagsdeploy/static/js/main.1c8123c9.js.map"
+    "main.82b6d1e6.js.map": "/sagsdeploy/static/js/main.82b6d1e6.js.map"
   },
   "entrypoints": [
     "static/css/main.15d77bd7.css",
-    "static/js/main.1c8123c9.js"
+    "static/js/main.82b6d1e6.js"
   ]
 }
