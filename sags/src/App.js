@@ -11,7 +11,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route
-            exact path="/"
+            exact path="/sagsdeploy"
             element={
               <LoginPage></LoginPage>
               
@@ -19,7 +19,7 @@ const App = () => {
             
           />
            <Route
-            exact path="/sagsdeploy"
+            exact path="/sagsdeploy/table"
             element={
               <>
               <Header></Header>
