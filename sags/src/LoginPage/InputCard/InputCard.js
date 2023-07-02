@@ -8,8 +8,7 @@ export const InputCard = () => {
     <div className={Style.line}></div>
    <div className={Style.TopInput}> <InputBox   ></InputBox>  </div>
     <div className={Style.BottomInput}> <InputBox></InputBox> </div>
-    <div className={Style.ButtonContainer}><Button variant="outlined" sx={{color:'black' }}>Sign in</Button></div>
-    
+    <div className={Style.ButtonContainer}><Button href = "/sagsdeploy/table" variant="outlined"  sx={{color:'black' }}>Sign in</Button></div>
     
 
         </div> 
